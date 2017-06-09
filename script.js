@@ -53,7 +53,13 @@ $(document).ready(function(){
 	});
 
 	function checkImagem(url){
+		var img = '<img src="' + url + '" />';
+		$(img).load(function() {
+			$('body').append(url +img);
+		}).blind('error', function() {
+			alert('imagem: ' +url+ 'não existe');
+		});
 		
-	}
-
-})
+	});
+	
+	
