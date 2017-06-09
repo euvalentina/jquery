@@ -23,4 +23,37 @@ $(document).ready(function(){
 		$('.professor').text('The teacher is my fried');
 	});
 
+	$('#bola1').mouseenter(function(){
+		$('.bola1').css('background','red');
+	});
+
+	$('#bola2').mouseenter(function(){
+		$('.bola2').css('background','blue');
+	});
+
+	$('#bola3').mouseenter(function(){
+		$('.bola3').css('background','green');
+	});
+
+	$('#bola4').mouseenter(function(){
+		$('.bola4').css('background','orenge');
+	});
+
+	$('.mudar').click(function(){
+		$(".time > .vaiPalmeiras").addClass('vaiCorinthians');
+		$(".time > .vaiPalmeiras").removeClass('vaiPalmeiras');
+	});
+
+	$('#mudarlink').click(function(){
+		$("a[href='http://www.casadapamonha.com.br']").attr("href='']")
+	});
+
+	$('#removertitle').click(function(){
+		$("a").removeAttr("title");
+	});
+
+	function checkImagem(url){
+		
+	}
+
 })
